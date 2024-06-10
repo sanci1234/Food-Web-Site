@@ -33,6 +33,17 @@ body{
 section{
     padding: 3.5rem 7%;
 }
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+.heading span{
+    text-transform: uppercase;
+    color: var(--black-color);
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -45,6 +56,9 @@ section{
     -moz-border-radius: 30rem;
     -ms-border-radius: 30rem;
     -o-border-radius: 30rem;
+}
+.btn:hover{
+    opacity: 0.7;
 }
 
 /* Header Start */
@@ -113,3 +127,53 @@ section{
     color: #ccc;
 }
 /* Home Section End */
+/* Menu Section Start */
+/* .menu h1{
+    color: #fff;
+    font-size: 6rem;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.menu span{
+    color: var(--black-color);
+} */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; 
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+.menu .box-container .box .menu-category{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.menu .box-container .box h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+.menu .box-container .box .price span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+/* Menu Section End */
