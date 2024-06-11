@@ -27,6 +27,18 @@ html{
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--black-color);
+    border-radius: 30rem;
+    -webkit-border-radius: 30rem;
+    -moz-border-radius: 30rem;
+    -ms-border-radius: 30rem;
+    -o-border-radius: 30rem;
+}
 body{
     background-color: var(--main-color);
 }
