@@ -89,6 +89,43 @@ a{
 }
 
 /* Header Start */
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    box-shadow: 0px 0px 25px 2px rgb(0 0 0 / 75% );
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+}
+.header .search-form.active{
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+.header .search-form input{
+    width: 100%;
+}
+.header .search-form i{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black-color);
+}
 .header{
     background-color: white;
     display: flex;
@@ -126,7 +163,10 @@ a{
     margin-left: 2rem;
     background-color: transparent;
 }
-/* Header End */
+#menu-btn{
+    display: none;
+}
+/* ! Header End */
 
 /* Home Section Start */
 .home{
@@ -153,16 +193,9 @@ a{
     padding: 1rem 0;
     color: #ccc;
 }
-/* Home Section End */
+/*! Home Section End */
+
 /* Menu Section Start */
-/* .menu h1{
-    color: #fff;
-    font-size: 6rem;
-    border-bottom: 1px solid rgb(212, 212, 212);
-}
-.menu span{
-    color: var(--black-color);
-} */
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
@@ -555,3 +588,46 @@ a{
     color: var(--main-color);
 }
 /* ! Footer Section End */
+/* Responsive Start */
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header .logo img{
+        height: 7rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .products .box-container .box .box-head .name{
+        font-size: 3.4rem;
+    }
+}
+@media (max-width: 768px) {
+   #menu-btn{
+    display: inline-block;
+   }
+   .header .navbar{
+    position: absolute;
+    top: 95%;
+    background-color: #fff;
+    height: calc(100vh - 9rem);
+    width: 30rem;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+    right: -100%;
+   }
+   .header .navbar.active{
+    right: 3rem;
+   }
+   .header .navbar a{
+    color: var(--black-color);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+   }
+}
+/* Resposive End */
