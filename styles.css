@@ -662,6 +662,9 @@ a{
    #menu-btn{
     display: inline-block;
    }
+   .header .menu-btn{
+    display: inline-block;
+}
    .header .navbar{
     position: absolute;
     top: 95%;
